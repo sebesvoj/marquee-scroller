@@ -167,7 +167,7 @@ static const char NEWS_FORM1[] PROGMEM =   "<form class='w3-container' action='/
                         "<p>Select News Source <select class='w3-option w3-padding' name='newssource' id='newssource'></select></p>"
                         "<script>var s='%NEWSSOURCE%';var tt;var xmlhttp=new XMLHttpRequest();xmlhttp.open('GET','https://raw.githubusercontent.com/sebesvoj/marquee-scroller/master/sources.json',!0);"
                         "xmlhttp.onreadystatechange=function(){if(xmlhttp.readyState==4){if(xmlhttp.status==200){var obj=JSON.parse(xmlhttp.responseText);"
-                        "obj.sources.forEach(t)}}};xmlhttp.send();function t(it){if(it!=null){if(s==it.id){se=' selected'}else{se=''}tt+='<option'+se+'>'+it.id+'</option>';"
+                        "obj.sources.forEach(t)}}};xmlhttp.send();function t(it){if(it!=null){if(s==it.id){se=' selected'}else{se=''}if(it.id=='ALL'){tt+='<option'+se+'>'+''+'</option>'}else{tt+='<option'+se+'>'+it.id+'</option>'}"
                         "document.getElementById('newssource').innerHTML=tt}}</script>"
                         "<p>Vyber kategorii <select class='w3-option w3-padding' name='newscategory' id='newscategory'></select></p>"
                         "<button class='w3-button w3-block w3-grey w3-section w3-padding' type='submit'>Save</button></form>";
@@ -399,7 +399,7 @@ void loop() {
 
       //show high/low temperature
       if (SHOW_HIGHLOW) {
-        msg += "High/Low:" + weatherClient.getHigh(0) + "/" + weatherClient.getLow(0) + " " + getTempSymbol() + "  ";
+        msg += "MAX/MIN:" + weatherClient.getHigh(0) + "/" + weatherClient.getLow(0) + " " + getTempSymbol() + "  ";
       }
       
       if (SHOW_CONDITION) {
@@ -409,7 +409,7 @@ void loop() {
         msg += "Humidity:" + weatherClient.getHumidityRounded(0) + "%  ";
       }
       if (SHOW_WIND) {
-        msg += "Wind: " + weatherClient.getDirectionText(0) + " @ " + weatherClient.getWindRounded(0) + " " + getSpeedSymbol() + "  ";
+        msg += "VITR: " + weatherClient.getDirectionText(0) + " @ " + weatherClient.getWindRounded(0) + " " + getSpeedSymbol() + "  ";
       }
       //line to show barometric pressure
       if (SHOW_PRESSURE) {
@@ -1213,7 +1213,7 @@ String getTempSymbol(bool forWeb) {
 String getSpeedSymbol() {
   String rtnValue = "mph";
   if (IS_METRIC) {
-    rtnValue = "kph";
+    rtnValue = "km/h";
   }
   return rtnValue;
 }
