@@ -4,6 +4,15 @@
         {
             "id": "business",
             "name": "Byznys",
+            "description": "Kategorie o bysnysu.",
+            "url": "https://abcnews.go.com",
+            "category": "general",
+            "language": "en",
+            "country": "us"
+        },
+        {
+            "id": "business",
+            "name": "Byznys",
             "description": "Kategorie o bysnysu."
         },
         {
