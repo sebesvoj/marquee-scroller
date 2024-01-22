@@ -11,6 +11,15 @@
             "country": "us"
         },
         {
+            "id": "business",
+            "name": "Byznys",
+            "description": "Kategorie o bysnysu.",
+            "url": "https://abcnews.go.com",
+            "category": "business",
+            "language": "cs",
+            "country": "cz"
+        },
+        {
             "id": "abc-news-au",
             "name": "ABC News (AU)",
             "description": "Australia's most trusted source of local, national and world news. Comprehensive, independent, in-depth analysis, the latest business, sport, weather and more.",
