@@ -2,7 +2,7 @@
     "status": "ok",
     "sources": [
         {
-            "id": "business",
+            "id": "kokot",
             "name": "Byznys",
             "description": "Kategorie o bysnysu.",
             "url": "https://abcnews.go.com",
