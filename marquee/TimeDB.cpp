@@ -123,40 +123,40 @@ String TimeDB::getMonthName() {
   String rtnValue = "";
   switch (month()) {
     case 1:
-      rtnValue = "Jan";
+      rtnValue = "Led";
       break;
     case 2:
-      rtnValue = "Feb";
+      rtnValue = "Uno";
       break;
     case 3:
-      rtnValue = "Mar";
+      rtnValue = "Bre";
       break;
     case 4:
-      rtnValue = "Apr";
+      rtnValue = "Dub";
       break;
     case 5:
-      rtnValue = "May";
+      rtnValue = "Kve";
       break;
     case 6:
-      rtnValue = "June";
+      rtnValue = "Cer";
       break;
     case 7:
-      rtnValue = "July";
+      rtnValue = "Cvc";
       break;
     case 8:
-      rtnValue = "Aug";
+      rtnValue = "Srp";
       break;
     case 9:
-      rtnValue = "Sep";
+      rtnValue = "Zar";
       break;
     case 10:
-      rtnValue = "Oct";
+      rtnValue = "Rij";
       break;
     case 11:
-      rtnValue = "Nov";
+      rtnValue = "Lis";
       break;
     case 12:
-      rtnValue = "Dec";
+      rtnValue = "Pro";
       break;
     default:
       rtnValue = "";
