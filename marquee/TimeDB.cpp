@@ -94,25 +94,25 @@ time_t TimeDB::getTime()
 String TimeDB::getDayName() {
   switch (weekday()) {
     case 1:
-      return "Sunday";
+      return "Nedele";
       break;
     case 2:
-      return "Monday";
+      return "Pondeli";
       break;
     case 3:
-      return "Tuesday";
+      return "Utery";
       break;
     case 4:
-      return "Wednesday";
+      return "Streda";
       break;
     case 5:
-      return "Thursday";
+      return "Ctvrtek";
       break;
     case 6:
-      return "Friday";
+      return "Patek";
       break;
     case 7:
-      return "Saturday";
+      return "Sobota";
       break;
     default:
       return "";
