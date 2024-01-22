@@ -48,7 +48,8 @@ void NewsApiClient::updateNews() {
     return;
   }
 
-  String apiGetData = "http://" + String(servername) + "/v2/top-headlines?sources=" + mySource + "&apiKey=" + myApiKey;
+  //String apiGetData = "http://" + String(servername) + "/v2/top-headlines?sources=" + mySource + "&apiKey=" + myApiKey;
+  String apiGetData = "http://" + String(servername) + "/v2/top-headlines?country=cz" + "&category=" + mySource + "&apiKey=" + myApiKey;
 
   Serial.println("Getting News Data");
   Serial.println(apiGetData);
