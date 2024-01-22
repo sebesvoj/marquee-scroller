@@ -406,14 +406,14 @@ void loop() {
         msg += description + "  ";
       }
       if (SHOW_HUMIDITY) {
-        msg += "Humidity:" + weatherClient.getHumidityRounded(0) + "%  ";
+        msg += "VLHKOST:" + weatherClient.getHumidityRounded(0) + "%  ";
       }
       if (SHOW_WIND) {
         msg += "VITR: " + weatherClient.getDirectionText(0) + " @ " + weatherClient.getWindRounded(0) + " " + getSpeedSymbol() + "  ";
       }
       //line to show barometric pressure
       if (SHOW_PRESSURE) {
-        msg += "Pressure:" + weatherClient.getPressure(0) + getPressureSymbol() + "  ";
+        msg += "TLAK:" + weatherClient.getPressure(0) + getPressureSymbol() + "  ";
       }
      
       msg += marqueeMessage + " ";
